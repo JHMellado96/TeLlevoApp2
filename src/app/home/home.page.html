@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <img src="assets/images/Te_Llevo_APP.png" alt="Logo">
+    <p>¿Necesitas una cuenta?, si es así <ion-button (click)="AccesoRegistro()" fill="clear" size="small" routerDirection="forward">REGÍSTRATE!</ion-button></p>
+    <p>Si ya tienes tu cuenta...</p>
+    
+    <ion-button (click)=" AccesoClientes()" expand="block" routerDirection="forward">Ingreso Pasajeros</ion-button>
+    <ion-button (click)="AccesoAdmins()" expand="block" routerDirection="forward">Ingreso Conductores</ion-button>
+  </div>
+</ion-content>
