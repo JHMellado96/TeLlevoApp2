@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Viajes Disponibles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Viajes Disponibles</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="warning">Viaje a: Talcahuano</ion-card-title>
+      </ion-card-header>
+    
+      <ion-title size="medium">7/12/2023 - 17:30</ion-title>
+      <ion-title size="small">Asientos Disponibles: 3</ion-title>
+      <ion-title size="small">Precio: $700</ion-title>
+      <ion-title size="small">Detalles: Voy por Colón hasta el Puerto. Puedo esperar máximo 15 minutos luego de la hora específicada.</ion-title>
+
+      <ion-button fill="clear" expand="block">Solicitar Asiento</ion-button>
+
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="warning">Viaje a: Hualpen</ion-card-title>
+      </ion-card-header>
+    
+      <ion-title size="medium">7/12/2023 - 18:15</ion-title>
+      <ion-title size="small">Asientos Disponibles: 2</ion-title>
+      <ion-title size="small">Precio: $500</ion-title>
+      <ion-title size="small">Detalles: Voy directo desde Duoc a La Floresta por la Costanera (si va más lejos de eso, no solicite el viaje).</ion-title>
+
+      <ion-button fill="clear" expand="block">Solicitar Asiento</ion-button>
+
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="warning">Viaje a: Hualpen</ion-card-title>
+      </ion-card-header>
+    
+      <ion-title size="medium">7/12/2023 - 14:30</ion-title>
+      <ion-title size="small">Asientos Disponibles: 3</ion-title>
+      <ion-title size="small">Precio: $800</ion-title>
+      <ion-title size="small">Detalles: Me iré por Golondrinas hasta las cercanías del Cerro Amarillo. Puedo ir un poco más lejos, pero sea prudente.</ion-title>
+
+      <ion-button fill="clear" expand="block">Solicitar Asiento</ion-button>
+
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="warning">Viaje a: Tomé</ion-card-title>
+      </ion-card-header>
+    
+      <ion-title size="medium">7/12/2023 - 19:00</ion-title>
+      <ion-title size="small">Asientos Disponibles: 4</ion-title>
+      <ion-title size="small">Precio: $1000</ion-title>
+      <ion-title size="small">Detalles: Iré directo hacia Tomé, una vez allá puedo ir donde necesiten... sean puntuales.</ion-title>
+
+      <ion-button fill="clear" expand="block">Solicitar Asiento</ion-button>
+
+    </ion-card>
+
+    <ion-card>
+      <ion-button (click)="Volver()" fill="clear" expand="block" routerDirection="back">Volver</ion-button>
+    </ion-card>
+
+  </div>
+
+</ion-content>

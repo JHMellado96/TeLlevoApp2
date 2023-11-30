@@ -17,6 +17,14 @@ export class AccesocliPage implements OnInit {
   ngOnInit() {
   }
 
+  Recuperar(){
+    this.router.navigate(['/recuperar']);
+  }
+
+  Volver(){
+    this.router.navigate(['/home']);
+  }
+
   async Logear(){
     if (this.email.trim() !== '' && this.password.trim() !== ''){
       const user: User = {

@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Recuperar Contraseña</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+
+    <ion-item>
+      <ion-input label="EMail" laceholder="usuario@duocuc.cl"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Tipo de Usuario:" placeholder="Seleccione opción">
+        <ion-select-option value="admin">Conductor</ion-select-option>
+        <ion-select-option value="cliente">Pasajero</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-title size="small">Si la información ingresada es correcta, se le enviará un correo para reestablecer su contraseña.</ion-title>
+    </ion-item>
+
+    <ion-button (click)="Enviar()" expand="block" routerDirection="forward">Enviar Solicitud</ion-button>
+
+    <ion-button (click)="Cancelar()" expand="block" color="warning" routerDirection="forward">Cancelar Recuperación</ion-button>
+
+  </div>
+
+</ion-content>

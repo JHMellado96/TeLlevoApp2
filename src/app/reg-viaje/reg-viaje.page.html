@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Programar Viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Programar Viaje</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div>
+
+    <ion-item>
+      <ion-title size="small">Seleccione la fecha y hora de viaje</ion-title>
+    </ion-item>
+
+    <ion-item>
+      <ion-datetime presentation="date-time" [preferWheel]="true"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Asientos disponibles:" placeholder="Seleccione la cantidad">
+        <ion-select-option value="uno">1 asiento</ion-select-option>
+        <ion-select-option value="dos">2 asientos</ion-select-option>
+        <ion-select-option value="tres">3 asientos</ion-select-option>
+        <ion-select-option value="cuatro">4 asientos</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Precio por pasajero:" placeholder="Seleccione valor">
+        <ion-select-option value="gratis">Gratis</ion-select-option>
+        <ion-select-option value="100">$100</ion-select-option>
+        <ion-select-option value="200">$200</ion-select-option>
+        <ion-select-option value="300">$300</ion-select-option>
+        <ion-select-option value="400">$400</ion-select-option>
+        <ion-select-option value="500">$500</ion-select-option>
+        <ion-select-option value="600">$600</ion-select-option>
+        <ion-select-option value="700">$700</ion-select-option>
+        <ion-select-option value="800">$800</ion-select-option>
+        <ion-select-option value="900">$900</ion-select-option>
+        <ion-select-option value="1000">$1000</ion-select-option>
+        <ion-select-option value="1500">$1500</ion-select-option>
+        <ion-select-option value="2000">$2000</ion-select-option>
+        <ion-select-option value="2500">$2500</ion-select-option>
+        <ion-select-option value="3000">$3000</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Comuna de destino:" placeholder="Seleccione comuna">
+        <ion-select-option value="concepcion">Concepción</ion-select-option>
+        <ion-select-option value="talcahuano">Talcahuano</ion-select-option>
+        <ion-select-option value="hualpen">Hualpen</ion-select-option>
+        <ion-select-option value="chiguayante">Chiguayante</ion-select-option>
+        <ion-select-option value="hualqui">Hualqui</ion-select-option>
+        <ion-select-option value="sanpedro">San Pedro</ion-select-option>
+        <ion-select-option value="coronel">Coronel</ion-select-option>
+        <ion-select-option value="lota">Lota</ion-select-option>
+        <ion-select-option value="penco">Penco</ion-select-option>
+        <ion-select-option value="lirquen">Lirquen</ion-select-option>
+        <ion-select-option value="tome">Tomé</ion-select-option>
+        <ion-select-option value="otro">Otro Destino</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Detalles de viaje:" [counter]="true" [maxlength]="100" placeholder="detalle de ruta, prohibiciones, etc..."></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-title size="small">Recuerde llevar el dinero en efectivo suficiente para no tener inconvenientes con el conductor o la conductora.</ion-title>
+    </ion-item>
+
+    <ion-button (click)="Registrar()" expand="block" routerDirection="forward">Registrar Viaje</ion-button>
+
+    <ion-button (click)="Cancelar()" expand="block" color="warning" routerDirection="forward">Cancelar Registro</ion-button>
+
+  </div>
+
+</ion-content>

@@ -13,6 +13,10 @@ export class MenucliPage implements OnInit {
   ngOnInit() {
   }
 
+  Buscar(){
+    this.router.navigate(['/rev-viaje']);
+  }
+
   LogOut(){
     this.router.navigate(['/home']);
   }

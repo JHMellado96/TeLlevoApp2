@@ -20,6 +20,10 @@ export class RegistrarPage implements OnInit {
   ngOnInit() {
   }
 
+  Cancelar(){
+    this.router.navigate(['/home']);
+  }
+
   async Registrar(){
     if (this.nombre.trim() !== '' &&this.apellido.trim() !== '' && this.email.trim() !== '' && this.password.trim() !== '' && this.tipo.trim() !== ''){
       const user: User = {

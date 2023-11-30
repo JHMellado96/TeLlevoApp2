@@ -31,6 +31,18 @@ const routes: Routes = [
     path: 'menuadm',
     loadChildren: () => import('./menuadm/menuadm.module').then( m => m.MenuadmPageModule)
   },
+  {
+    path: 'reg-viaje',
+    loadChildren: () => import('./reg-viaje/reg-viaje.module').then( m => m.RegViajePageModule)
+  },
+  {
+    path: 'rev-viaje',
+    loadChildren: () => import('./rev-viaje/rev-viaje.module').then( m => m.RevViajePageModule)
+  },
+  {
+    path: 'recuperar',
+    loadChildren: () => import('./recuperar/recuperar.module').then( m => m.RecuperarPageModule)
+  },
 ];
 
 @NgModule({

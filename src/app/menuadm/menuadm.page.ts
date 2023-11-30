@@ -13,6 +13,10 @@ export class MenuadmPage implements OnInit {
   ngOnInit() {
   }
 
+  ProgramarViaje(){
+    this.router.navigate(['/reg-viaje']);
+  }
+
   LogOut(){
     this.router.navigate(['/home']);
   }
